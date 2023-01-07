@@ -100,18 +100,18 @@ def copley():
                             toast=False)
                             
                             
-                    #Phone notification!
+                    #Phone notification! 
                          #Account SID from twilio.com/console
-                            account_sid = 'AC59086b39adf701d1e556124108a45164' 
+                            account_sid = ['account_sid'] 
 
                         #Auth Token from twilio.com/console
-                            auth_token = 'cf1e5f2e7d1825cc5edd82b014014ce8' 
+                            auth_token = ['auth_token'] 
                             client = Client(account_sid, auth_token) 
  
                             message = client.messages.create(  
-                                  messaging_service_sid='MG45952c62fb1f56de0f555683ff8f18ce', 
+                                  messaging_service_sid=['messaging_service_sid'], 
                                   body= message,      
-                                  to='+12039647165' 
+                                  to=['your_cell'] 
                                   )  
                             
                         else:
